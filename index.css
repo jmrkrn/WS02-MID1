@@ -1,0 +1,342 @@
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFED9D;
+    max-width: 1500px;
+}
+
+@import {
+    font-family: poppin src:url('https://fonts.googleapis.com/css2?family-Poppins:wght@400;600;900&display=swap');
+}
+
+@import {
+    url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+}
+
+@import {
+    url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Khand:wght@300;400;500;600;700&display=swap');
+}
+
+header {
+    height: 697px;
+    padding: 10px;
+    background-color: #FFD26F;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* Add this line to establish a stacking context */
+    width: auto;
+}
+
+.bilogs {
+    position: absolute;
+    width: 580px;
+    height: 550px;
+    margin-top: 90px;
+    right: 860px;
+    z-index: 1;
+    /* Set a lower z-index to place it behind other elements */
+}
+
+.header-text {
+    color: azure;
+    text-shadow: solid red;
+    font-weight: 800px;
+}
+
+header img {
+    width: 615px;
+    height: 705px;
+   
+    /*margin-left:30px; */
+    position: relative;
+    /* Add this line to establish a stacking context */
+    z-index: 2;
+    /* Set a higher z-index to place it above .bilogs */
+    
+}
+
+#chopper {
+   ?/* filter: drop-shadow(0 0 0.75rem crimson); */
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.line1 {
+    height: 190px;
+    width: 25px;
+    padding: 0px;
+    position: relative;
+    bottom: 250px;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+
+.header1 {
+    font-size: 70px;
+    padding: 0px;
+    position: absolute;
+    top: 215px;
+    left: 720px;
+    padding: 0px;
+    color: #FFF;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+ /*text-shadow: 2px 2px 4px #000000;*/
+    font-style: normal;
+    font-weight: ;
+}
+
+.header2 {
+    padding: 0px;
+    font-size: 130px;
+    position: absolute;
+    top: 230px;
+    left: 710px;
+    padding: 15px;
+    color: #FFF;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+    font-weight: bolder;
+}
+
+.content {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+    padding: top;
+    line-height: 23px;
+    padding-top: 60px;
+    padding: 0px;
+}
+
+img.big-image {
+    max-width: 200%;
+    width: 700px;
+    padding: 15px;
+}
+
+.content-about {
+    background-color: #FFED9D;
+    max-width: 900px;
+
+    padding: 20px;
+    position: relative;
+    text-align: justify;
+    top: 40px;
+    left: 50px;
+
+}
+
+/*
+.content-char h2 {
+  text-align: center; 
+}
+*/
+
+.content-char ul {}
+
+
+.content-char li {
+    list-style: none;
+    line-height: 30px;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.content-char {
+    background-color: #FFED9D;
+    max-width: 900px;
+    padding: 20px;
+    /*position: relative; */
+    left: 500px;
+    text-align: justify;
+    margin-top: 35px;
+    margin-left: 520PX;
+
+}
+
+.content-header {
+    height: auto;
+    width: auto;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.content-char li {
+    font-size: 19px;
+    line-height: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.content-char ul {
+    margin-top: 20px;
+}
+
+.p1 {
+    font-size: 19px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #000;
+    /* Solid black line */
+    margin: 0px;
+    
+  }
+
+/* this part if for chopper's transformation DIV */
+.content-bimg h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.content-bimg {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #FFD26F;
+    padding: 20px;
+}
+
+.tforms {
+    width: 1000px;
+    height: 600px;
+
+
+}
+
+.item {
+    margin: 50px;
+}
+
+#desc1 {
+    font-size: 20px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+    font-weight: 400;
+
+}
+
+
+/* Add this CSS for the hover effect */
+img.big-image {
+    max-width: 100%;
+    /* Change the max-width to 100% to make the image responsive */
+    transition: transform 0.4s ease-in-out;
+    /* Add a transition for smooth zooming */
+}
+
+/* Apply the zoom effect on hover */
+img.big-image:hover {
+    transform: scale(1.1);
+    /* Increase the size on hover (you can adjust the scale factor) */
+}
+
+.content-link {
+    margin-top: 60px;
+}
+.content-link h2{
+    font-size: 34px;
+}
+
+.img-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+/* POSTER 2 HOVER*/
+.img-poster-one {   
+    transition: transform .5s ease;
+}
+.img-poster-one:hover {
+    transform: scale(1.2);
+}
+
+/* POSTER 2 HOVER*/
+.img-poster-two {
+    transition: transform .5s ease;
+    overflow: visible;
+}
+.img-poster-two:hover {
+    transform: scale(1.2);
+}
+/* POSTER 3 HOVER*/
+.img-poster-three {
+    transition: transform .5s ease;
+    overflow: visible;
+}
+.img-poster-three:hover {
+    transform: scale(1.2);
+
+}
+
+
+#link-name {
+    position: relative;
+    bottom: 60px;
+}
+
+
+.img-poster {
+    width: 170px;
+    height: 240px;
+    margin: 50px;
+   
+}
+
+.img-poster:hover img {
+   
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+}
+
+a {
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+
+}
+
+footer {
+    margin-top: 20px;
+    padding: 40px 20px;
+    background-color: #FFD26F;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(ocean.gif);
+
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.the-crew {
+    width: 100px;
+    display: flex;
+    justify-content: baseline;
+    display: flex;
+    min-height: 100%;
+
+}
+
+#header-nakama {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
